@@ -1,0 +1,57 @@
+            Jake Derkowski  ~   COSC 2347 - Special Topics  
+                    Homework2   ~   Program Design
+        
+Goal: 
+    Print and calculate the area of the trapezoid which is generated from the input
+    of the user.
+    
+Steps:
+    The area of a Trapezoid is given by the formula: 
+        A = (Base1 + Base2) * Height * (1/2),
+    therefore, we must have all of variables in order to perfrom the calculation.
+    
+    1.) Get input from user.
+            Input for Base 1 must be recieved and verified first because the validity
+            of base 2 depends on the value of base 1.
+            
+            for accuracy, a do-while loop should be used to check the following
+            conditions:
+            
+            1. Ask for input
+            2. check input against the conditions (return value True/False)
+            3. if condtion is met, break and continue program
+                if conditions are not met print reason why
+                    (   1. not in range 
+                        2. is a even number
+                        3. is not large enough (only for base 2).   )
+
+    2.) The value of height must be calculated:
+        number of rows = (base2 - base1)
+        this gives the number of rows after the base2 (bottom_base); therefore,
+        the height of the trapezoid is : number of rows + 1
+            this value will be gathered from a function returning height as an 
+            integer, and will later be used in calculating the area.
+            
+
+    3.) all of the values necessary for the Area formula have now be collected,
+    verified, and stored appropriately. For this calculation to done, a generic 
+    trapezoid function will be created using the variables of the formula as it's
+    parameters.
+    
+    4.) The other goal of this program is to print the user's trapezoid which requires
+    an input for the charachter in which the trapezoid will be printed with. The print
+    -ing of this should be done using nested for loops. One of the for loops willl be 
+    responsiple for the spacing of each line, and the other will be for the symbols be-
+    ing printed.
+    
+    5.) Before displaying the printed trapezoid and it's area, i have added an additional
+    step that prints the values of the dimensions that are used in the calculation to pre-
+    sent to the user that the correct values are being used and to show that the height value
+    has been generated for them.
+    
+    6.) call the void function that prints the trapezoid.
+    
+    7.) call the generic area of trapezoid function, save to variable, print it out clearly 
+    for the user to see and understand.
+    
+  
